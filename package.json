@@ -1,0 +1,24 @@
+{
+  "name": "googlemapsapitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batmancini20155/googleMapsApiTest.git"
+  },
+  "author": "ChrisM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batmancini20155/googleMapsApiTest/issues"
+  },
+  "homepage": "https://github.com/batmancini20155/googleMapsApiTest#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "requirejs": "^2.3.6"
+  }
+}

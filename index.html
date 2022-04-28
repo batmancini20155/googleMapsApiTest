@@ -6,29 +6,71 @@
   <head>
     <meta charset="utf-8">
     <title>google maps feature test</title>
+
+    <!-- <script src="script4.js"></script> -->
+    <!-- <script src="script5.js"></script> -->
+    <!-- <script src="script6.js"></script> -->
+    <script src="script7.js"></script>
+
   </head>
 
   <body>
 
     <div class="mainContainer" id="mainContainer">
-
-      <form class="addressForm" action="index.html" method="post">
+      <div id="mapDiv"></div>
+        <label for="">Please input</input><br>
+        <input type="text" id="myInput" value="">
+      <!-- <form class="addressForm" action="index.html" method="post">
         <label for="">City, state, or postal code</label><br>
         <input type="text" name="" value="">
-      </form>
+      </form> -->
+    </div>
 
 
 
+    <div>
+      <div id="title">Countries</div>
+      <div id="country-selector" class="pac-controls">
+        <input type="radio" name="type" id="changecountry-usa" />
+        <label for="changecountry-usa">USA</label>
 
+        <input
+          type="radio"
+          name="type"
+          id="changecountry-usa-and-uot"
+          checked="checked"
+        />
+        <label for="changecountry-usa-and-uot"
+          >USA and unincorporated organized territories</label
+        >
+      </div>
+    </div>
+    <div id="pac-container">
+      <input id="pac-input" type="text" placeholder="Enter a location" />
+    </div>
+
+    <div class="pac-card" id="pac-card">
+
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
     </div>
 
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRXCY6ClwxMOr8bRFL2thHcJnr2cOWjgk&callback=initMap"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <script src="script.js" type="text/javascript"></script> -->
     <!-- <script src="script2.js" type="text/javascript"></script> -->
-    <!-- <script src="script3.js" type="module"></script> -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc_NXxNk3kqyBO5qcAHGnWfIV7arBgAPo&callback=initMap"></script>
+    <!-- <script src="script2.js" type="text/javascript"></script> -->
 
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc_NXxNk3kqyBO5qcAHGnWfIV7arBgAPo&libraries=places&callback=initMap"
+      defer>
+    </script>
+
+    <!-- <script id="googleMapsScript" async src="#"></script> -->
 
   </body>
 
